@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffeeshop</title>
+    <style>
+       
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <form action="" method="post">
+    
+   </form>
+</body>
+</html>
+    <h2> or i will use cards to display my images</h2>
+<div class="card">
+    <img class="card-img-top" src="/images/contr.png" alt="Card image cap">
+    <div class="card-body"> What an epic image!</div>
+   </div>
+
+   <form-group>
+    <div class=”form-group”>
+    <input type="text" class="form-control"  placeholder=" ">
+    <button type="submit" class="btn btn-primary">Order</button>
+    <button type="submit" class="btn btn-secondary">Close</button>
+</div>
+   
+   
+</form>
+
+
+
+
+
+<div class="container">  
+    <div class="row">    
+        <div class="table table-light" >
+            <table class="table table-light">
+                <thead>
+                    <tr>
+                        <th scope=”col”>Coffee</th>
+                        <th scope=”col”>price</th>
+                        <th scope=”col”>Image</th>
+                        <th scope=”col”>Order</th>
+                    </tr>
+                </thead>
+        <tbody>
+            <tr>
+                {% for c in coffees %}
+                <th scope=”row”>{{c.name}}</th>
+                <td>{{c.price}}</td>
+                <td>
+                    <a href="https://www.pexels.com/photo/close-up-of-coffee-cup-on-table-312418/">
+                    <img src="coffeee.jpg" alt="Coffee image"></a>
+                </td>
+                <td>
+                    <button type="button" class="btn btn-outline-primary float-right" >Order</button> <button type="button" class="btn btn-warning float-right">Cancel</button> <button type="button" class="btn btn-info float-right">Edit</button> 
+                </td>
+                {% endfor %}
+            </tr>
+        </tbody>
+    </table>
+    </div> 
+</div>
+</div>
+
+
+
+
+<div class="jumbotron" style="width:100%;padding:20%;">
+    <form method="GET" action="/signup">
+        <div class="form-group" >
+        <label for="email">Email Address</label><br>
+        <input type="email" class="form-control" name="user-email" required placeholder="name@example.com"><br>
+        <label for="password">Password</label><br>
+        <input type="password" class="form-control" placeholder ="password" required name="user-password">
+        <input type="password" class="form-control" placeholder ="Reenter password" required required name="user-password">
+        <button type="submit" class="btn btn-primary">Sign Up</button>
+        
+    </div>
+    </form>
+    </div>
+    <button type="submit" class="btn btn-primary" style="color:white;display-style:none;"><a href="/" >Home</button>
+    
+        <style>
+            float:right;
+            body{
+                justify-content: space-between;
+            }
+        </style>
+    

@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block title %} 
+
+   
+{% endblock %}
+
+
+{% block body %}    
+<!-- Load an icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="navbar navbar-expand-lg navbar-light bg-light" style="justify-content: space-around;">
+<ul class ="nav nav-tabs">
+  <li class ="nav-item">
+    <a class="nav-link" >Unicafe</a>
+  </li>
+  <li class ="nav-item">
+    <a class="nav-link" href="/"><i class="fa fa-fw fa-home"></i>Home</a>
+  </li>
+  <li class ="nav-item">
+    <a class="nav-link" href="/"><i class="fa fa-fw fa-menu-bar"></i>Menu</a>
+  </li> 
+  <li class ="nav-item">
+    <a class="nav-link" href="#!"><i class="fa fa-fw fa-trolley"></i>Order Now</a>
+  </li>
+  <li class="nav-item">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fa fa-fw fa-search"></i></button>
+  </li>
+</ul>
+</div>
+
+
+<div class="jumbotron jumbotron-fluid p-3">
+    <div class=" well text-container">
+        <h1 class="display-4">Unicafe.</h1>
+        <p class="lead"><em>maestri del caffè implacabili<em></p>
+    </div>
+</div>
+
+
+
+{% endblock %}

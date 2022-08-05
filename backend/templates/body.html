@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %} 
+{% endblock %}
+{% block body %}    
+{% for c in coffees %}
+<div class="container">
+    <div class="column">
+        <div class="card" style=" width: 14rem;height:12 rem;margin-right: 20px;
+        margin-bottom: 20px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);">
+            <img class="card-img-top " src="/static/images/coffeee.jpg" style="height:55%" alt="coffee">
+            <div class="card-body">
+              <h5 class="well text-container">{{c.name}}</h5>
+              <p class="card-text">R{{c.price}}</p>
+              <a href="/order" class="btn btn-success">Add to Cart</a>
+              <a href="/#!" class="btn btn-info">Edit</a> 
+              <a href="/#!" class="btn btn-warning color-blue">Cancel</a> 
+              <input type="number" name ="order_quantity" checked {%if c.selected%} {% endif %} style="width:45px;">
+                 
+        </div>
+    </div>
+</div>
+{% endfor %}
+
+{% endblock %}
